@@ -10,5 +10,5 @@ cloudinary.config({
   });
 
   export const removeFromCloud=(id)=>{
-    cloudinary.v2.uploader.destroy(id,()=>console.log("törölve: "+id))
+    cloudinary.v2.uploader.destroy(id,(bab)=>console.log("törölve: "+id,bab))
   }
